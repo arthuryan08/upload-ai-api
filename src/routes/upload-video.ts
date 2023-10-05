@@ -34,7 +34,6 @@ export async function uploadVideoRoute(app: FastifyInstance){
 
     const uploadDestination = path.resolve(__dirname, '../../tmp', fileUploadName)
 
-    // Certificar-se de que o diretório existe antes de escrever o arquivo.
     try {
       fs.mkdirSync(path.dirname(uploadDestination), { recursive: true });
 
