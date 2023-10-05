@@ -26,3 +26,17 @@ Content-Type: application/json
 {
   "prompt": "amor, me fazer de besta"
 }
+
+###
+
+# @name generate-ai-completion
+
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "ee5a8bdd-01be-4af8-89e5-18a8423a6fdc",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
+
