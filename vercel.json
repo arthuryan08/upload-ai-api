@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/server.ts", 
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "handle": "vercel",
+      "src": "/(.*)", 
+      "dest": "src/server.ts"
+    }
+  ],
+  "env": {
+    "DATABASE_URL": "@your-database-secret",
+    "OPENAI_KEY": "@your-openai-secret"
+  }
+}
