@@ -9,19 +9,20 @@
   },
   "author": "",
   "license": "ISC",
-  "prisma":{
+  "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
   "devDependencies": {
     "@types/node": "^20.7.2",
-    "prisma": "^5.3.1",
+    "prisma": "^5.4.2",
     "tsx": "^3.13.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
     "@fastify/cors": "^8.4.0",
     "@fastify/multipart": "^8.0.0",
-    "@prisma/client": "^5.3.1",
+    "@prisma/client": "^5.4.2",
+    "@vercel/postgres": "^0.5.0",
     "ai": "^2.2.15",
     "dotenv": "^16.3.1",
     "fastify": "^4.23.2",
